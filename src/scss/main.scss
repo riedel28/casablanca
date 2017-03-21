@@ -1,0 +1,19 @@
+// Normalize -- Reset styles
+@import "../../node_modules/normalize.css/normalize";
+
+@import "base/mixins";
+
+
+//===================================
+//======== Base styles ==============
+//===================================
+@import "base/global";
+
+
+// Layout
+@import "layout/container";
+@import "layout/header";
+@import "layout/section";
+@import "layout/btn";
+@import "layout/gallery";
+@import "layout/team";

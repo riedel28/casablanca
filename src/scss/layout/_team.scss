@@ -1,0 +1,117 @@
+.team {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @include medium {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        align-items: stretch;
+    }
+}
+
+.team__employee {
+    position: relative;
+    // width: 40%;
+    // flex: 40% 1 auto;
+    flex: 1;
+    margin-bottom: 30px;
+    border: 1px solid black;
+
+    @include medium {
+        width: 23%;
+    }
+
+    img {
+        display: block;
+    }
+}
+
+.team__employee--hire {
+    display: block;
+    border: 3px solid #000000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 10px;
+
+    h4 {
+        font-size: 1.7rem;
+
+        &:after {
+            content: "";
+            display: block;
+            width: 20%;
+            height: 3px;
+            margin: 40px auto 20px;
+            background-color: #000000;
+        }
+    }
+
+    a {
+        display: inline-block;
+        width: 60%;
+        margin: 0 auto;
+        padding: 1rem 3rem;
+        font-family: "Amble Regular";
+        font-size: 1.2rem;
+        color: #000000;
+        text-align: center;
+        border: 3px solid #000000;
+
+        &:hover {
+            background-color: #000000;
+            color: #ffffff;
+        }
+    }
+}
+
+.team__employee-overlay {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    right: 0;
+    background-color: #000000;
+    opacity: 0.5;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: 0.5s ease;
+}
+
+.team__employee:hover .team__employee-overlay {
+    bottom: 0;
+    height: 100%;
+}
+
+.team__employee-overlay-title {
+    font-family: "BigJohn Regular";
+    font-size: 1rem;
+    color: #ffffff;
+    margin-top: 0;
+
+    &:after {
+        content: "";
+        display: block;
+        width: 40%;
+        height: 1px;
+        background-color: #ffffff;
+        margin: 1rem auto 0;
+    }
+}
+
+.team__employee-overlay-subtitle {
+    font-family: "Amble Light";
+    font-size: 0.9rem;
+    color: #ffffff;
+}
+
+.team__employee-overlay-text-container {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

@@ -1,0 +1,132 @@
+.section {
+    text-align: center;
+
+    &--p-t-medium {
+        padding-top: 4rem;
+        @include medium {
+            padding-top: 120px;
+        }
+    }
+
+    &--p-b-medium {
+        padding-bottom: 4rem;
+        @include medium {
+            padding-bottom: 120px;
+        }
+    }
+
+    &--p-t-large {
+        padding-top: 9rem;
+        background-color: #e4e4e4;
+        @include medium {
+            padding-top: 200px;
+        }
+    }
+
+    &--p-b-large {
+        padding-bottom: 9rem;
+        @include medium {
+            padding-bottom: 200px;
+        }
+    }
+
+    &__title {
+        // text-align: center;
+        font-size: 1.375em;
+
+        &:after {
+            content: "";
+            display: block;
+            width: 10%;
+            height: 2px;
+            background-color: #000000;
+            margin: 2rem auto 3rem;
+            @include medium {
+                margin: 4rem auto 3.6rem;
+            }
+        }
+        @include medium {
+            font-size: 2rem;
+            margin-bottom: 4rem;
+        }
+    }
+
+    &__description {
+        font-family: "Amble Light";
+        font-size: 0.9rem;
+        line-height: 1.4;
+        // text-align: center;
+        @include medium {
+            font-size: 1.2rem;
+        }
+    }
+
+    &--creativity {
+        background: url("../img/creativity-bg.jpg") top center no-repeat;
+        background-size: cover;
+    }
+
+    &--work__list {
+        // border: 1px solid black;
+        // display: flex;
+        // flex-direction: column;
+        // flex-wrap: wrap;
+        margin-bottom: 2rem;
+        @include medium {
+            margin-bottom: 4rem;
+        }
+    }
+
+    &--work__item {
+        // border: 1px solid black;
+        display: inline-block;
+    }
+
+    &--work__link {
+        display: inline-block;
+        font-family: "SlimJoe Regular";
+        text-decoration: none;
+        color: #000000;
+        padding: 20px;
+
+        &:hover {
+            font-family: "BigJohn Regular";
+        }
+
+        &--active {
+            font-family: "BigJohn Regular";
+        }
+    }
+
+    &--help {
+        background: url("../img/help-bg.jpg") top center no-repeat;
+        background-size: cover;
+    }
+
+    &--clients {
+        background-color: #f4f4f4;
+    }
+
+    &--clients__clients-list {
+        margin-top: 4rem;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        align-items: flex-end;
+    }
+
+    &--clients__clients-item {
+        display: block;
+        // flex: 1;
+        width: 15%;
+    }
+
+    &--clients__clients-link {
+        display: block;
+
+        img {
+            display: block;
+        }
+    }
+
+}
