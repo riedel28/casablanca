@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="12.719" height="24" viewBox="0 0 12.719 24">
+  <defs>
+    <style>
+      .icon--facebook { fill: #222; fill-rule: evenodd; }
+    </style>
+  </defs>
+  <path class="icon--facebook" d="M2.823 13.27v10.74h5.351V13.32h3.657l.883-4.45h-4.5V5.6a.973.973 0 0 1 1-1.05h2.6V.01H6.958C5.284.01 2.81 2.02 2.81 4.16v4.58H.003v4.51z"/>
+</svg>

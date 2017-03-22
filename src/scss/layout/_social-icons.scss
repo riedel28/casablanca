@@ -1,0 +1,46 @@
+.social-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-end;
+  padding-top: 40px;
+
+  @include large {
+    justify-content: flex-start;
+  }
+
+  &__link {
+    display: inline-block;
+    // margin: 0 30px;
+    // padding: 20px;
+    transition: 0.3s ease-out;
+
+
+    @include large {
+      margin-right: 30px;
+
+    }
+
+  }
+
+  .icon--twitter:hover {
+    fill: #1da1f2;
+  }
+
+  .icon--facebook:hover {
+    fill: #3b5998;
+  }
+
+  .icon--linkedin:hover {
+    fill: #0077b5;
+  }
+  .icon--vimeo:hover {
+    fill: #1ab7ea;
+  }
+  .icon--behance:hover {
+    fill: #1769ff;
+  }
+
+
+
+}

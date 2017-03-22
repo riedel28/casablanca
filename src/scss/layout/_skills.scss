@@ -1,0 +1,60 @@
+.skills {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  // overflow-x: auto;
+
+  @include large {
+    flex-direction: row;
+    align-items: flex-end;
+  }
+
+  &__item {
+
+    // display: flex;
+    margin-bottom: 30px;
+
+    background-color: azure;
+    // text-align: right;
+
+    // border: 1px solid black;
+
+    @include large {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+
+  &__item-text-container {
+    display: flex;
+    flex-direction: column;
+    // justify-content: space-around;
+    padding: 0 20px;
+
+    // border: 1px solid black;
+
+
+  }
+
+  &__item-pic {
+    border: 1px solid black;
+    // padding: 50px;
+
+    @include medium {
+      padding: 30px;
+    }
+  }
+
+  &__item-title {
+    font-family: "Amble Regular";
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    // border: 1px solid black;
+  }
+
+  &__item-description {
+    font-family: "Amble Light";
+    font-size: 0.9rem;
+    // border: 1px solid black;
+  }
+}
