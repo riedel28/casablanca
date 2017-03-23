@@ -11,9 +11,29 @@
 
 <body>
   <header class="header">
-    <div class="header__menu">
-      <div class="header__menu-middle"></div>
+    <div class="header__menu-icon">
+      <div class="header__menu-icon-middle"></div>
     </div>
+    <div class="header__menu header__menu--hide">
+      <ul class="header__menu-list">
+        <li class="header__menu-item">
+          <a href="#introduction" class="header__menu-link">Introduction</a>
+        </li>
+        <li class="header__menu-item">
+          <a href="#portfolio" class="header__menu-link">Portfolio</a>
+        </li>
+        <li class="header__menu-item">
+          <a href="#clients" class="header__menu-link">Clients</a>
+        </li>
+        <li class="header__menu-item">
+          <a href="#about-us" class="header__menu-link">About us</a>
+        </li>
+        <li class="header__menu-item">
+          <a href="#contacts" class="header__menu-link">Contacts</a>
+        </li>
+      </ul>
+    </div>
+
     <div class="header__text-container">
       <div class="header__title">We've got the talent</div>
       <div class="header__subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente laboriosam quo dolor totam, cupiditate incidunt labore!</div>
@@ -24,14 +44,14 @@
   </header>
   <section class="section section--p-t-medium section--p-b-medium">
     <div class="container">
-      <h2 class="section__title">Introduction</h2>
+      <h2 id="introduction" class="section__title">Introduction</h2>
       <p class="section__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab provident doloremque recusandae dolore architecto, officiis in quia adipisci laudantium excepturi cupiditate consequuntur cum vero omnis non earum, laborum ipsum aspernatur.</p>
     </div>
   </section>
   <section class="section section--w-btn section--p-t-large section--p-b-large section--creativity">
     <a href="#" class="btn btn--white">Pure Creativity</a>
   </section>
-  <section class="section section--p-t-medium section--p-b-medium section--work">
+  <section id="portfolio" class="section section--p-t-medium section--p-b-medium section--work">
     <div class="container">
       <h2 class="section__title">Some of our work</h2>
       <ul class="section--work__list">
@@ -124,13 +144,13 @@
   <section class="section section--w-btn section--p-t-large section--p-b-large section--help">
     <a href="#" class="btn btn--white">We're to help</a>
   </section>
-  <section class="section section--p-t-medium section--p-b-medium section--clients">
+  <section id="clients" class="section section--p-t-medium section--p-b-medium section--clients">
     <div class="container">
       <h2 class="section__title">Our clients</h2>
       <ul class="section--clients__clients-list">
         <li class="section--clients__clients-item">
           <a href="#" class="section--clients__clients-link">
-            <img src="../img/icon--google.png" alt="Google">
+            <img src="../img/icon--google.svg" alt="Google">
           </a>
         </li>
         <li class="section--clients__clients-item">
@@ -140,24 +160,24 @@
         </li>
         <li class="section--clients__clients-item">
           <a href="#" class="section--clients__clients-link">
-            <img src="../img/icon--flickr.png" alt="Flickr">
+            <img src="../img/icon--flickr.svg" alt="Flickr">
           </a>
         </li>
         <li class="section--clients__clients-item">
           <a href="#" class="section--work__clients-link">
-            <img src="../img/icon--foursquare.png" alt="Foursquare">
+            <img src="../img/icon--foursquare.svg" alt="Foursquare">
           </a>
         </li>
         <li class="section--clients__clients-item">
           <a href="#" class="section--clients__clients-link">
-            <img src="../img/icon--pinterest.png" alt="Pinterest">
+            <img src="../img/icon--pinterest.svg" alt="Pinterest">
           </a>
         </li>
       </ul>
     </div>
 
   </section>
-  <section class="section section--p-t-medium section--about-us">
+  <section id="about-us" class="section section--p-t-medium section--about-us">
     <div class="container">
       <h2 class="section__title">About Us</h2>
       <p class="section__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut exercitationem totam voluptates ipsa rerum tempora eaque temporibus ipsam, incidunt modi laboriosam, cupiditate mollitia earum. Nisi, maiores distinctio asperiores, sapiente laboriosam
@@ -200,8 +220,11 @@
       </div>
     </div>
   </section>
-  <section class="section--video section--p-t-large section--p-b-large">
-
+  <section class="section--video">
+    <video id="video" controls>
+            <!-- <source src="../img/video.mp4" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser. -->
+            <source src="../img/video.webm" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser.
+        </video>
   </section>
   <section class="section section--p-t-medium section--p-b-medium section-choose-us">
     <div class="container">
@@ -212,24 +235,21 @@
           <img class="skills__item-pic" src="../img/icon--iphone.svg" alt="App Design">
           <div class="skills__item-text-container">
             <h5 class="skills__item-title">App Design</h5>
-            <p class="skills__item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus modi nulla, maiores nesciunt dolore necessitatibus ullam repudiandae porro saepe, adipisci unde ex corporis culpa laboriosam accusamus nihil, in hic quasi quia quis dolorem quod
-              a iusto! Nisi incidunt sequi voluptate earum impedit totam quod alias, omnis, fuga, repellendus eaque temporibus.!</p>
+            <p class="skills__item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam ipsum distinctio, modi maxime fugiat qui.</p>
           </div>
         </div>
         <div class="skills__item">
           <img class="skills__item-pic" src="../img/icon--ipad.svg" alt="Responsive Web Layout">
           <div class="skills__item-text-container">
             <h5 class="skills__item-title">Responsive Web Layout</h5>
-            <p class="skills__item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus modi nulla, maiores nesciunt dolore necessitatibus ullam repudiandae porro saepe, adipisci unde ex corporis culpa laboriosam accusamus nihil, in hic quasi quia quis dolorem quod
-              a iusto! Nisi incidunt sequi voluptate earum impedit totam quod alias, omnis, fuga, repellendus eaque temporibus.!</p>
+            <p class="skills__item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio velit voluptatem deleniti, provident mollitia incidunt!</p>
           </div>
         </div>
         <div class="skills__item">
-          <img class="skills__item-pic" src="../img/icon--macbook.svg" alt="Pixel Perfect Design">
+          <img class="skills__item-pic" src="../img/icon--macbook.png" alt="Pixel Perfect Design">
           <div class="skills__item-text-container">
             <h5 class="skills__item-title">Pixel Perfect Design</h5>
-            <p class="skills__item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus modi nulla, maiores nesciunt dolore necessitatibus ullam repudiandae porro saepe, adipisci unde ex corporis culpa laboriosam accusamus nihil, in hic quasi quia quis dolorem quod
-              a iusto! Nisi incidunt sequi voluptate earum impedit totam quod alias, omnis, fuga, repellendus eaque temporibus.!</p>
+            <p class="skills__item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, voluptatibus quidem totam debitis, blanditiis consequatur.</p>
           </div>
         </div>
       </div>
@@ -244,7 +264,7 @@
       <p class="section__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab provident doloremque recusandae dolore architecto, officiis in quia adipisci laudantium excepturi cupiditate consequuntur cum vero omnis non earum, laborum ipsum aspernatur.</p>
     </div>
   </section>
-  <section class="section section--contacts">
+  <section id="contacts" class="section section--contacts">
     <!-- <div class="section-wrapper"> -->
     <div class="location">
       <h3 class="location__title">Our location</h3>
@@ -324,6 +344,11 @@
     <p class="footer__copyright">2014 &copy; <span>Samir Timezguida.</span> All rights reserved</p>
   </footer>
 
+
+  <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+
+  <script src="../js/main.js">
+  </script>
 </body>
 
 </html>

@@ -1,17 +1,16 @@
 var gulp = require("gulp"),
     scss = require("gulp-sass"),
     browserSync = require("browser-sync"),
-    autoprefixer = require("autoprefixer"),
-    plumber = ("gulp-plumber");
-
+    autoprefixer = require("autoprefixer");
 
 // Sass compilation
 gulp.task("scss", function() {
     return gulp.src("src/scss/**/*.scss")
-        // .pipe(plumber())
         .pipe(scss(autoprefixer))
         .pipe(gulp.dest("src/css/"))
-        .pipe(browserSync.reload({stream: true}));
+        .pipe(browserSync.reload({
+            stream: true
+        }));
 });
 
 // Browser-Sync live reload
