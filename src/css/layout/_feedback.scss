@@ -1,0 +1,177 @@
+.feedback {
+  padding-top: 70px;
+  padding-bottom: 50px;
+  background: #e4e4e4;
+
+  @include medium {
+    // width: 70%;
+    padding-top: 105px;
+
+    // margin-right: 0;
+    // float: right;
+  }
+
+  @include large {
+    width: 70%;
+    padding-right: 5%;
+    // flex: 1;
+    // padding-top: 105px;
+
+    // margin-right: 0;
+    // float: right;
+  }
+
+}
+
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+
+  @include medium {
+    // flex-direction: row;
+    // flex-wrap: nowrap;
+  }
+
+  @include large {
+    padding-right: 5%;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+
+
+  &__name-input {
+    // width: 100%;
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px 0 5px;
+    margin-bottom: 40px;
+    text-align: center;
+    font-family: "Amble Light";
+    font-size: 18px;
+    font-style: italic;
+    color: #676767;
+    background: #e4e4e4;
+    border: none;
+    border-bottom: 2px solid #afafaf;
+
+    @include small {
+      width: 60%;
+    }
+
+    @include medium {
+      // width: 100%;
+      margin-bottom: 100px;
+    }
+
+    @include large {
+      width: 40%;
+      text-align: left;
+      padding-left: 20px;
+    }
+  }
+
+  &__email-input {
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px 0 5px;
+    margin-bottom: 40px;
+    text-align: center;
+    font-family: "Amble Light";
+    font-size: 18px;
+    font-style: italic;
+    color: #676767;
+    background: #e4e4e4;
+    border: none;
+    border-bottom: 2px solid #afafaf;
+
+    @include small {
+      width: 60%;
+    }
+
+    @include medium {
+      width: 60%;
+      margin-left: 150px;
+      margin-right: 0;
+      margin-bottom: 100px;
+    }
+
+    @include large {
+      width: 40%;
+      margin-left: 7%;
+      // margin-left: 75px;
+      text-align: left;
+      padding-left: 20px;
+    }
+  }
+
+  &__message-input {
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px 0 5px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: "Amble Light";
+    font-size: 18px;
+    font-style: italic;
+    color: #676767;
+    background: #e4e4e4;
+    border: none;
+    border-bottom: 2px solid #afafaf;
+
+    @include small {
+      width: 60%;
+    }
+
+    @include medium {
+      width: 60%;
+      // margin-left: 150px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 50px;
+    }
+
+    @include large {
+      // margin-right: 100px;
+      margin-left: 7%;
+      width: 94%;
+      text-align: left;
+      padding-left: 20px;
+    }
+
+
+  }
+
+  button {
+    // display: block;
+    display: inline-block;
+    font-family: "Amble Bold";
+    font-size: 1.2rem;
+    text-decoration: none;
+    text-align: center;
+    // width: 30%;
+    margin: 50px auto;
+    padding: 15px 50px;
+    transition: 0.2s ease-out;
+    cursor: pointer;
+
+    border: 3px solid #000000;
+    color: #000000;
+    background-color: transparent;
+
+    @include small {
+      // width: 60%;
+      padding: 1rem 3rem;
+    }
+
+    @include large {
+      margin-right: 0;
+      padding: 15px 90px;
+    }
+
+    &:hover {
+      background: #000000;
+      color: #ffffff;
+    }
+  }
+}

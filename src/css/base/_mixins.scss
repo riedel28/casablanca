@@ -1,0 +1,25 @@
+@mixin small {
+  @media (min-width: 319px) {
+    @content;
+  }
+}
+
+@mixin medium {
+  @media (min-width: 767px) {
+    @content;
+  }
+}
+
+@mixin large {
+  @media (min-width: 1023px) {
+    @content;
+  }
+}
+
+@mixin clearfix {
+  &::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+}

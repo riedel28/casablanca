@@ -1,0 +1,21 @@
+.footer {
+
+  background-color: #222222;
+  color: #ffffff;
+  text-align: center;
+
+
+
+  &__logo {
+    margin-bottom: 20px;
+    width: 80%;
+  }
+
+  &__copyright {
+    font-family: "Amble Light";
+
+    span {
+      color: #d87843;
+    }
+  }
+}

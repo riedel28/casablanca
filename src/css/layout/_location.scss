@@ -1,0 +1,29 @@
+.location {
+  // width: 100%;
+  background-color: #f2f2f2;
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+
+  @include medium {
+    // width: 30%;
+    // float: left;
+    // margin-right: 0;
+  }
+
+  @include large {
+    width: 30%;
+    text-align: left;
+    padding-left: 5%;
+  }
+
+  &__title {
+    margin-bottom: 2rem;
+  }
+
+  &__description {
+    font-family: "Amble Light";
+    font-style: italic;
+  }
+
+}
