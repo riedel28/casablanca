@@ -39,10 +39,10 @@ var path = {
 var config = {
     server: {
         baseDir: "./build"
-    },
-    tunnel: true,
-    host: 'localhost',
-    port: 9000,
+    }
+    // tunnel: true,
+    // host: 'localhost'
+    // port: 3000,
 };
 
 // Server task
@@ -50,7 +50,7 @@ gulp.task('webserver', function () {
     browserSync(config);
 });
 
-// HTML task - copies html files and reloads the page
+// HTML task → copies html files and reloads the page
 gulp.task('html:build', function() {
     gulp.src(path.src.html)
         .pipe(gulp.dest(path.build.html))
@@ -59,7 +59,7 @@ gulp.task('html:build', function() {
         }));
 });
 
-// Styles task - compiles scss, adds soucemaps, vendor prefixes and reloads the page
+// Styles task → compiles scss, adds soucemaps, vendor prefixes and reloads the page
 gulp.task('style:build', function() {
     gulp.src(path.src.style)
         .pipe(sourcemaps.init())
@@ -73,7 +73,7 @@ gulp.task('style:build', function() {
         }));
 });
 
-// JS task - adds sourcemaps and compresses js files
+// JS task → adds sourcemaps and compresses js files
 gulp.task('js:build', function() {
     gulp.src(path.src.js)
         .pipe(sourcemaps.init())
@@ -85,7 +85,7 @@ gulp.task('js:build', function() {
         }));
 });
 
-// Images task - copies and minifies images
+// Images task → copies and minifies images
 gulp.task('image:build', function() {
     gulp.src(path.src.img)
         .pipe(imagemin({
@@ -122,20 +122,20 @@ gulp.task('watch', function(){
 });
 
 
-// Fonts task - copies fonts from 'src' folder to 'build'
+// Fonts task → copies fonts from 'src' folder to 'build'
 gulp.task('fonts:build', function() {
     gulp.src(path.src.fonts)
         .pipe(gulp.dest(path.build.fonts))
 });
 
 
-// Clean task - deletes 'build' folder
+// Clean task → deletes 'build' folder
 gulp.task('clean', function (cb) {
     rimraf(path.clean, cb);
 });
 
 
-// Build task - builds project together
+// Build task → builds project together
 gulp.task('build', [
     'html:build',
     'js:build',

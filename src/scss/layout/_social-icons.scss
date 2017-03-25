@@ -11,14 +11,11 @@
 
   &__link {
     display: inline-block;
-    // margin: 0 30px;
-    // padding: 20px;
     transition: 0.3s ease-out;
 
 
     @include large {
       margin-right: 30px;
-
     }
 
   }
@@ -40,7 +37,5 @@
   .icon--behance:hover {
     fill: #1769ff;
   }
-
-
 
 }

@@ -2,5 +2,4 @@
 
 $(".header__menu-icon").click(function () {
   $(".header__menu").toggleClass("header__menu--hide");
-  // alert("click");
 });

@@ -1,12 +1,11 @@
-// Normalize -- Reset styles
+// Normalize → Reset styles
 @import "../../node_modules/normalize.css/normalize";
 
+// Mixins
 @import "base/mixins";
 
 
-//===================================
-//======== Base styles ==============
-//===================================
+// Base styles
 @import "base/global";
 
 

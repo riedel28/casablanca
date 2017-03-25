@@ -6,7 +6,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
   background: url("../img/header-bg.jpg") top center no-repeat;
   background-size: cover;
   color: #ffffff;
@@ -23,8 +22,6 @@
     transition: 0.4s ease-out;
 
     &--hide {
-      // width: 0px;
-      // display: none;
       transform: translateX(-100%);
     }
 
@@ -98,7 +95,6 @@
   }
 
   &__text-container {
-    // border: 1px solid white;
     width: 80%;
     text-align: center;
 
@@ -151,14 +147,10 @@
   &__scroll {
     display: inline-block;
     position: absolute;
-    left: 50%;
-    transform: translateY(-50%);
+    // left: 50%;
+    // transform: translateY(-50%);
     bottom: 20px;
     content: "";
     display: block;
-    // width: 40px;
-    // height: 50px;
-    // background-color: #ffffff;
-    // border: 1px solid white;
   }
 }

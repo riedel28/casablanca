@@ -1,15 +1,7 @@
 .location {
-  // width: 100%;
   background-color: #f2f2f2;
   padding-top: 100px;
   padding-bottom: 100px;
-
-
-  @include medium {
-    // width: 30%;
-    // float: left;
-    // margin-right: 0;
-  }
 
   @include large {
     width: 30%;

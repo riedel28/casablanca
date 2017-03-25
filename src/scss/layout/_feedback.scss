@@ -4,21 +4,12 @@
   background: #e4e4e4;
 
   @include medium {
-    // width: 70%;
     padding-top: 105px;
-
-    // margin-right: 0;
-    // float: right;
   }
 
   @include large {
     width: 70%;
     padding-right: 5%;
-    // flex: 1;
-    // padding-top: 105px;
-
-    // margin-right: 0;
-    // float: right;
   }
 
 }
@@ -28,8 +19,6 @@
   flex-direction: column;
 
   @include medium {
-    // flex-direction: row;
-    // flex-wrap: nowrap;
   }
 
   @include large {
@@ -41,7 +30,6 @@
 
 
   &__name-input {
-    // width: 100%;
     width: 90%;
     margin: 0 auto;
     padding: 10px 0 5px;
@@ -60,7 +48,6 @@
     }
 
     @include medium {
-      // width: 100%;
       margin-bottom: 100px;
     }
 
@@ -143,13 +130,11 @@
   }
 
   button {
-    // display: block;
     display: inline-block;
     font-family: "Amble Bold";
     font-size: 1.2rem;
     text-decoration: none;
     text-align: center;
-    // width: 30%;
     margin: 50px auto;
     padding: 15px 50px;
     transition: 0.2s ease-out;
@@ -160,7 +145,6 @@
     background-color: transparent;
 
     @include small {
-      // width: 60%;
       padding: 1rem 3rem;
     }
 
