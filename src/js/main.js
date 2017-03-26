@@ -1,5 +1,6 @@
 // var $ = require("../../node_modules/jquery/dist/jquery.js");
 
-$(".header__menu-icon").click(function () {
-  $(".header__menu").toggleClass("header__menu--hide");
+$(".hamburger").click(function () {
+  $(".hamburger").toggleClass("is-active");
+  $(".header__menu").toggleClass("header__menu--show");
 });

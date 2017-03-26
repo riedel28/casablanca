@@ -41,8 +41,8 @@ var config = {
         baseDir: "./build"
     }
     // tunnel: true,
-    // host: 'localhost'
-    // port: 3000,
+    // host: 'localhost',
+    // port: 3000
 };
 
 // Server task
