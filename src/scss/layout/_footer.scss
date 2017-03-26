@@ -3,16 +3,31 @@
   color: #ffffff;
   text-align: center;
 
+  @include medium {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
   &__logo {
     margin-bottom: 20px;
     width: 80%;
+
+    @include large {
+      width: 30%;
+    }
   }
 
   &__copyright {
     font-family: "Amble Light";
+    width: 80%;
+    margin: 0 auto;
 
     span {
       color: #d87843;
+    }
+
+    @include large {
+      width: 30%;
     }
   }
 }
