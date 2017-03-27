@@ -1,4 +1,4 @@
-// var $ = require("../../node_modules/jquery/dist/jquery.js");
+// Header menu function
 
 $(".hamburger").click(function () {
   $(".hamburger").toggleClass("is-active");

@@ -31,7 +31,6 @@
     }
 
     &__title {
-        // text-align: center;
         font-size: 1.375em;
 
         &:after {
@@ -55,7 +54,6 @@
         font-family: "Amble Light";
         font-size: 0.9rem;
         line-height: 1.4;
-        // text-align: center;
         @include medium {
             font-size: 1.1rem;
         }
@@ -67,19 +65,13 @@
     }
 
     &--work__list {
-        // width: 100%;
-        // border: 1px solid black;
         display: flex;
         flex-direction: column;
-        // flex-wrap: wrap;
         margin-bottom: 2rem;
         @include medium {
             flex-direction: row;
-            justify-content: space-between;
-            margin-bottom: 4rem;
-        }
-        @include large {
             justify-content: space-around;
+            margin-bottom: 4rem;
         }
     }
 
@@ -89,7 +81,6 @@
         font-family: "SlimJoe Regular";
         text-decoration: none;
         color: #000000;
-        padding: 10px 0;
 
         &:hover {
             font-family: "BigJohn Regular";
@@ -121,7 +112,6 @@
         display: block;
         width: 35%;
         padding: 30px 0;
-
         @include medium {
             padding: 0;
             width: 15%;
@@ -146,7 +136,6 @@
         width: 100%;
         display: flex;
         flex-direction: column;
-
         @include large {
             flex-direction: row;
         }
