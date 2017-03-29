@@ -1,6 +1,13 @@
 // Header menu function
 
-$(".hamburger").click(function () {
-  $(".hamburger").toggleClass("is-active");
-  $(".header__menu").toggleClass("header__menu--show");
-});
+var hamburger = document.querySelector(".hamburger");
+var headerMenu = document.querySelector(".header__menu");
+
+function openMenu() {
+  hamburger.addEventListener("click", function() {
+    hamburger.classList.toggle("is-active");
+    headerMenu.classList.toggle("header__menu--show");
+  });
+}
+
+openMenu();
