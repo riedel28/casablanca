@@ -8,7 +8,8 @@ var gulp = require("gulp"),
     sourcemaps = require('gulp-sourcemaps'),
     cssmin = require("gulp-cssmin"),
     uglify = require("gulp-uglify"),
-    rimraf = require('rimraf');
+    rimraf = require('rimraf'),
+    rename = require('gulp-rename');
 
 
 var path = {
@@ -67,7 +68,8 @@ gulp.task('style:build', function() {
         .pipe(autoprefixer())
         .pipe(cssmin())
         .pipe(sourcemaps.write())
-        .pipe(gulp.dest(path.build.css)) //И в build
+        .pipe(rename("main.min.css"))
+        .pipe(gulp.dest(path.build.css))
         .pipe(browserSync.reload({
             stream: true
         }));
