@@ -106,7 +106,9 @@ gulp.task('images', function() {
         }));
 });
 
-gulp.task('symbols', function() {
+
+// SVG sprite task → makes a sprite from svg files
+gulp.task('sprite', function() {
     return gulp.src('img/icons/*.svg')
         .pipe(svgmin())
         .pipe(svgstore({
