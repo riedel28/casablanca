@@ -1,12 +1,12 @@
-var gulp = require("gulp"),
+var gulp = require('gulp'),
     watch = require('gulp-watch'),
     scss = require("gulp-sass"),
-    browserSync = require("browser-sync"),
-    autoprefixer = require("gulp-autoprefixer"),
-    imagemin = require("gulp-imagemin"),
+    browserSync = require('browser-sync'),
+    autoprefixer = require('gulp-autoprefixer'),
+    imagemin = require('gulp-imagemin'),
     pngquant = require('imagemin-pngquant'),
     sourcemaps = require('gulp-sourcemaps'),
-    cssmin = require("gulp-cssmin"),
+    cssmin = require('gulp-cssmin'),
     uglify = require("gulp-uglify"),
     rimraf = require('rimraf'),
     rename = require('gulp-rename'),
@@ -29,7 +29,7 @@ var path = {
         img: 'src/img/**/*.*',
         fonts: 'src/fonts/**/*.*'
     },
-    watch: { // Which files will be watched
+    watch: { // Files to watch
         html: 'src/**/*.html',
         js: 'src/js/**/*.js',
         style: 'src/scss/**/*.scss',
