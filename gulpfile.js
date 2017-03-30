@@ -9,7 +9,9 @@ var gulp = require("gulp"),
     cssmin = require("gulp-cssmin"),
     uglify = require("gulp-uglify"),
     rimraf = require('rimraf'),
-    rename = require('gulp-rename');
+    rename = require('gulp-rename'),
+    svgmin = require('gulp-svgmin'),
+    svgstore = require('gulp-svgstore');
 
 
 var path = {
@@ -52,7 +54,7 @@ gulp.task('webserver', function () {
 });
 
 // HTML task → copies html files and reloads the page
-gulp.task('html:build', function() {
+gulp.task('html', function() {
     gulp.src(path.src.html)
         .pipe(gulp.dest(path.build.html))
         .pipe(browserSync.reload({
@@ -61,7 +63,7 @@ gulp.task('html:build', function() {
 });
 
 // Styles task → compiles scss, adds soucemaps, vendor prefixes and reloads the page
-gulp.task('style:build', function() {
+gulp.task('styles', function() {
     gulp.src(path.src.style)
         .pipe(sourcemaps.init())
         .pipe(scss())
@@ -76,7 +78,7 @@ gulp.task('style:build', function() {
 });
 
 // JS task → adds sourcemaps and compresses js files
-gulp.task('js:build', function() {
+gulp.task('js', function() {
     gulp.src(path.src.js)
         .pipe(sourcemaps.init())
         .pipe(uglify())
@@ -88,7 +90,7 @@ gulp.task('js:build', function() {
 });
 
 // Images task → copies and minifies images
-gulp.task('image:build', function() {
+gulp.task('images', function() {
     gulp.src(path.src.img)
         .pipe(imagemin({
             progressive: true,
@@ -104,28 +106,37 @@ gulp.task('image:build', function() {
         }));
 });
 
+gulp.task('symbols', function() {
+    return gulp.src('img/icons/*.svg')
+        .pipe(svgmin())
+        .pipe(svgstore({
+            inlineSvg: true
+        }))
+        .pipe(rename('symbols.svg'))
+        .pipe(gulp.dest('img'));
+});
 
 gulp.task('watch', function(){
     watch([path.watch.html], function(event, cb) {
-        gulp.start('html:build');
+        gulp.start('html');
     });
     watch([path.watch.style], function(event, cb) {
-        gulp.start('style:build');
+        gulp.start('styles');
     });
     watch([path.watch.js], function(event, cb) {
-        gulp.start('js:build');
+        gulp.start('js');
     });
     watch([path.watch.img], function(event, cb) {
-        gulp.start('image:build');
+        gulp.start('images');
     });
     watch([path.watch.fonts], function(event, cb) {
-        gulp.start('fonts:build');
+        gulp.start('fonts');
     });
 });
 
 
 // Fonts task → copies fonts from 'src' folder to 'build'
-gulp.task('fonts:build', function() {
+gulp.task('fonts', function() {
     gulp.src(path.src.fonts)
         .pipe(gulp.dest(path.build.fonts))
 });
@@ -139,11 +150,11 @@ gulp.task('clean', function (cb) {
 
 // Build task → builds project together
 gulp.task('build', [
-    'html:build',
-    'js:build',
-    'style:build',
-    'fonts:build',
-    'image:build'
+    'html',
+    'js',
+    'styles',
+    'fonts',
+    'images'
 ]);
 
 
