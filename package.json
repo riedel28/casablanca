@@ -31,6 +31,7 @@
     "hamburgers": "^0.8.1",
     "imagemin-pngquant": "^5.0.0",
     "jquery": "^3.2.1",
+    "moveto": "^1.6.1",
     "normalize.css": "^5.0.0"
   }
 }
